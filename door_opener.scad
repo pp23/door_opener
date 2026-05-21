@@ -27,7 +27,7 @@ USBC_PORT_W = 11;
 USBC_PORT_Y = DISP_Y;
 
 box_make(explode=2)
-box_shell_base_lid([BOX_W,BOX_D,BOX_H], wall_sides=1.2, wall_top=2, base_height=BOX_H) {
+box_shell_base_lid([BOX_W,BOX_D,BOX_H], wall_sides=1.6, wall_top=2, base_height=BOX_H) {
     // display cut out
     back(-DISP_Y-DISP_D/2) left(DISPLAY_MARGIN) box_pos(anchor=BACK+RIGHT,side=TOP) box_cutout(rect([DISP_W,DISP_D],rounding=2),chamfer=0.75,anchor=RIGHT);
     // USBC-Port cut out
