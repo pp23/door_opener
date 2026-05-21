@@ -27,6 +27,10 @@ box_shell_base_lid([PCB_W,PCB_D,PCB_H], wall_sides=1.2, wall_top=2, base_height=
     box_half(BOT) back(DCF_D/2) right(DCF_SCREW_HOLE_X) box_pos(anchor=LEFT) standoff(h=PCB_STANDOFF_H, id=DCF_SCREW_HOLE_R);
     // back-right standoff
     box_half(BOT) back(-DCF_D/2) right(DCF_SCREW_HOLE_X) box_pos(anchor=LEFT) standoff(h=PCB_STANDOFF_H, id=DCF_SCREW_HOLE_R);
+    // back-right standoff
+    box_half(BOT) back(-3) left(3) box_pos(anchor=BACK+RIGHT) standoff(h=PCB_STANDOFF_H, id=1,od=3);
+    // front-right standoff
+    box_half(BOT) back(3) left(3) box_pos(anchor=FRONT+RIGHT) standoff(h=PCB_STANDOFF_H, id=1,od=3);
     
     // text
     box_part(TOP, inside=false)
